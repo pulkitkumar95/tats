@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Trajectory-aligned Space-time Tokens for Few-shot Action Recognition</h1>
 
-[**Pulkit Kumar**](https://www.cs.umd.edu/~pulkit/)<sup>1</sup> · [**Namitha Padmanabhan**](https://namithap10.github.io/)<sup>1</sup> · [**Luke Luo**](https://github.com/lluo02)<sup>1</sup> · [**Sai Saketh Rambhatla**](https://rssaketh.github.io)<sup>1,2</sup> · [**Abhinav Shrivastava**](http://www.cs.umd.edu/~abhinav/)<sup>2</sup>
+[**Pulkit Kumar**](https://www.cs.umd.edu/~pulkit/)<sup>1</sup> · [**Namitha Padmanabhan**](https://namithap10.github.io/)<sup>1</sup> · [**Luke Luo**](https://github.com/lluo02)<sup>1</sup> · [**Sai Saketh Rambhatla**](https://rssaketh.github.io)<sup>1,2</sup> · [**Abhinav Shrivastava**](http://www.cs.umd.edu/~abhinav/)<sup>1</sup>
 
 <sup>1</sup>University of Maryland, College Park&emsp;&emsp;&emsp;&emsp;<sup>2</sup>GenAI, Meta
 

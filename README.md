@@ -13,3 +13,6 @@
 <!-- <p float='center'><img src="assets/teaser.png" width="80%" /></p>
 <span style="color: green; font-size: 1.3em; font-weight: bold;">LocoTrack is an incredibly efficient model,</span> enabling near-dense point tracking in real-time. It is <span style="color: red; font-size: 1.3em; font-weight: bold;">6x faster</span> than the previous state-of-the-art models. -->
 </div>
+
+## Code Release
+This repository contains the code for our paper "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition". The code will be released by 8/15/24.

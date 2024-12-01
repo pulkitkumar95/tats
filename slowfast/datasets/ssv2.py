@@ -16,9 +16,9 @@ logger = logging.get_logger(__name__)
 
 
 @DATASET_REGISTRY.register()
-class Ssv2_cleaned(BaseDataset):
+class Ssv2(BaseDataset):
     def __init__(self, cfg, mode):
-        super(Ssv2_cleaned, self).__init__(cfg, mode)
+        super(Ssv2, self).__init__(cfg, mode)
     def _construct_loader(self):
         """
         Construct the video loader.

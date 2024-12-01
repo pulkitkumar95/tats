@@ -12,9 +12,9 @@ logger = logging.get_logger(__name__)
 
 
 @DATASET_REGISTRY.register()
-class K400_cleaned(BaseDataset):
+class K400(BaseDataset):
     def __init__(self, cfg, mode):
-        super(K400_cleaned, self).__init__(cfg, mode)
+        super(K400, self).__init__(cfg, mode)
     def _construct_loader(self):
         """
         Construct the video loader.

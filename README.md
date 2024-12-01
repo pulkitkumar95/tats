@@ -35,6 +35,11 @@ Please refer to:
 - `slowfast/datasets/DATASET.md` for dataset preparation instructions
 - `point_tracking/README.md` for point extraction details
 
+The few-shot split information for all datasets can be downloaded from:
+[https://www.cs.umd.edu/~pulkit/tats/few_shot_split_info.tar.gz](https://www.cs.umd.edu/~pulkit/tats/few_shot_split_info.tar.gz)
+
+**Note:** During the code release preparation, we thoroughly tested the codebase with SSv2 and Kinetics datasets. While other datasets should work as expected, if you encounter any issues while working with them, please raise an issue in the repository.
+
 ## Training and Testing
 
 Before running the training, set the following environment variables:
@@ -80,6 +85,20 @@ Key parameters:
 - `N_WAY`: Number of classes per episode (e.g., 5)
 - `TRAIN_EPISODES`: Number of training episodes (e.g., 400)
 - `TRAIN_QUERY_PER_CLASS`: Number of query examples per class (e.g., 6)
+
+## Development
+
+This codebase is under active development. If you encounter any issues or have questions, please feel free to:
+- Open an issue in this repository
+- Contact Pulkit at pulkit[at]umd[dot]edu
+
+## Acknowledgments
+
+This codebase is built upon two excellent repositories:
+- [ORViT](https://github.com/eladb3/ORViT): Object-Regions for Video Instance Recognition and Tracking
+- [MoLo](https://github.com/alibaba-mmai-research/MoLo): Motion-augmented Long-form Video Understanding
+
+We thank the authors for making their code publicly available.
 
 ## Citation
 

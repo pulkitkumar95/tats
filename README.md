@@ -17,7 +17,7 @@
 This repository contains the code for our paper "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition".
 
 <div align="center" style="background-color: white; padding: 20px;">
-<img src="tats_framework.png" width="100%">
+<img src="tats_framework.jpg" width="100%">
 </div>
 
 ## Installation

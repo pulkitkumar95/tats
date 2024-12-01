@@ -14,8 +14,7 @@
 <span style="color: green; font-size: 1.3em; font-weight: bold;">LocoTrack is an incredibly efficient model,</span> enabling near-dense point tracking in real-time. It is <span style="color: red; font-size: 1.3em; font-weight: bold;">6x faster</span> than the previous state-of-the-art models. -->
 </div>
 
-## Code Release
-This repository contains the code for our paper "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition". The code will be released by 8/15/24.
+This repository contains the code for our paper "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition".
 
 ## Installation
 
@@ -35,8 +34,7 @@ Please refer to:
 - `slowfast/datasets/DATASET.md` for dataset preparation instructions
 - `point_tracking/README.md` for point extraction details
 
-The few-shot split information for all datasets can be downloaded from:
-[https://www.cs.umd.edu/~pulkit/tats/few_shot_split_info.tar.gz](https://www.cs.umd.edu/~pulkit/tats/few_shot_split_info.tar.gz)
+The few-shot split information for all datasets can be downloaded from [here](https://www.cs.umd.edu/~pulkit/tats/few_shot_split_info.tar.gz).
 
 **Note:** During the code release preparation, we thoroughly tested the codebase with SSv2 and Kinetics datasets. While other datasets should work as expected, if you encounter any issues while working with them, please raise an issue in the repository.
 

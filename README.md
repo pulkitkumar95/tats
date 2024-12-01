@@ -16,6 +16,11 @@
 
 This repository contains the code for our paper "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition".
 
+<p align="center">
+<img src="tats_framework.png" width="100%">
+</p>
+
+
 ## Installation
 
 1. Create a conda environment using the provided environment file:

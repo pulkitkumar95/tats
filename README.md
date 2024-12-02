@@ -63,6 +63,7 @@ torchrun --nproc_per_node=$NUM_GPUS --master_port=$PORT tools/run_net.py \
     --init_method env:// \
     --new_dist_init \
     --cfg configs/TaTs/ssv2_longer_steps.yaml \
+    MASTER_PORT $PORT \
     OUTPUT_DIR $OUTPUT_DIR \
     NUM_GPUS $NUM_GPUS \
     DATA_LOADER.NUM_WORKERS $NUM_WORKERS \

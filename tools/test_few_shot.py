@@ -25,7 +25,19 @@ from slowfast.utils.multigrid import MultigridSchedule
 import os
 import wandb
 import pandas as pd
-from tools.train_few_shot import wandb_init_dict
+from fvcore.common.config import CfgNode
+
+def wandb_init_dict(cfg_node, key_list=[]):
+    """
+    Convert a config node to dictionary.
+    """
+    if not isinstance(cfg_node, CfgNode):
+        return cfg_node
+    else:
+        cfg_dict = dict(cfg_node)
+        for k, v in cfg_dict.items():
+            cfg_dict[k] = wandb_init_dict(v)
+        return cfg_dict
 
 def process_patch_tokens(cfg, support_tokens, query_tokens):
     """

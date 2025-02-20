@@ -439,8 +439,7 @@ def test_few_shot(cfg, args, local_rank=-1, wandb_run=None):
 
     if du.is_master_proc() and cfg.LOG_MODEL_INFO:
         misc.log_model_info(model, cfg, use_train_input=True)
-    # cur_epoch = cu.load_test_checkpoint(cfg, model)
-    cur_epoch = 0
+    cur_epoch = cu.load_test_checkpoint(cfg, model)
     val_loader = loader.construct_loader(cfg, "test") # MOLO uses test set for validation
     val_meter = ValMeter(len(val_loader), cfg)
             

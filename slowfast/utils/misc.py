@@ -295,26 +295,9 @@ def launch_job(cfg, init_method, func, daemon=False, new_dist_init=False, args=N
         daemon (bool): The spawned processes’ daemon flag. If set to True,
             daemonic processes will be created
     """
-    if args.new_dist_init:
-        func(cfg=cfg, args=args, wandb_run=wandb_run)
-        return 
-    if cfg.NUM_GPUS > 1:
-        torch.multiprocessing.spawn(
-            mpu.run,
-            nprocs=cfg.NUM_GPUS,
-            args=(
-                cfg.NUM_GPUS,
-                func,
-                init_method,
-                cfg.SHARD_ID,
-                cfg.NUM_SHARDS,
-                cfg.DIST_BACKEND,
-                cfg,
-            ),
-            daemon=daemon,
-        )
-    else:
-        func(cfg=cfg)
+
+    return func(cfg=cfg, args=args, wandb_run=wandb_run)
+  
 
 
 def get_class_names(path, parent_path=None, subset_path=None):
